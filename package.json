@@ -1,11 +1,11 @@
 
 {
-  "name": "@thechelsuk/your-project-name",
+  "name": "@thechelsuk/rss-chat-reply-manager-for-jekyll",
   "version": "1.0.4",
-  "description": "A short description of your project",
+  "description": "Manages replies from rss.chat into a static site",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thechelsuk/your-project-name.git"
+    "url": "https://github.com/thechelsuk/rss-chat-reply-manager-for-jekyll.git"
   },
   "author": "thechelsuk",
   "license": "MIT"
