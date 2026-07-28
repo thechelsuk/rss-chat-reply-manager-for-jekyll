@@ -1,1 +1,4 @@
 # Change your vars here
+
+# Example https://demo.rss.chat/users/<username>/rss.xml
+user_rss_feed = "<url_of_the_user_feed>"
