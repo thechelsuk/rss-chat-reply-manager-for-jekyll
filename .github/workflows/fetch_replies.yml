@@ -1,0 +1,50 @@
+---
+name: Fetch Replies
+
+on:
+    schedule:
+        - cron: "41 * * * *"
+    workflow_dispatch:
+
+permissions:
+    contents: write
+    pages: write
+    id-token: write
+
+concurrency:
+    group: fetch-feeds
+    cancel-in-progress: false
+
+jobs:
+    fetch:
+        runs-on: ubuntu-latest
+        outputs:
+            before_sha: ${{ steps.before.outputs.sha }}
+            current_sha: ${{ steps.after.outputs.sha }}
+
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v7
+              with:
+                  fetch-depth: 0
+
+            - name: Set up Python and dependencies
+              uses: ./.github/actions/python-setup
+              with:
+                  python-version: "3.12"
+
+            - name: Capture before SHA
+              id: before
+              run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+
+            - name: Fetch PESOS feeds
+              run: |
+                  python script.py
+
+            - name: Commit updated YAML files
+              <add your commiting action>
+
+    deploy:
+        needs: fetch
+        secrets: inherit
+        <commit / build script>
