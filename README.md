@@ -20,9 +20,9 @@ python script.py
 Increment the package.json version, using SEMVER when commiting new changes to the script.
 The GitHub action will  create a new release using the last commit message as the release note.
 
-## Notes
+## Notes
 
-## Example reply format
+### Example reply format
 
 Each reply is a yaml block within a slug.yml file in the `_data/replies` folder. This exposes the data to the Liquid templating and can be displayed in a post.html file as show below
 
@@ -35,6 +35,8 @@ Each reply is a yaml block within a slug.yml file in the `_data/replies` folder.
   markdown: I like that this is a reply on your site as well as rss.chat.
   in_reply_to: https://demo.rss.chat/?id=0000
 ```
+
+### Example template.html file
 
 Add this to your post.html template to pull in the replies for each post (matching on slug)
 
