@@ -1,7 +1,7 @@
 
 {
   "name": "@thechelsuk/rss-chat-reply-manager-for-jekyll",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "Manages replies from rss.chat into a static site",
   "repository": {
     "type": "git",
