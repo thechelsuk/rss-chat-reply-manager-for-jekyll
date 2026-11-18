@@ -6,7 +6,7 @@
 1. Rename config.py.example to config.py
 1. Create any necessary tokens
 1. Populate config.py with our username feed
-1. Update the fetch_replies.yml action to include your commit back to the repo step and your deploy step.
+1. Copy [`examples/fetch_replies.yml`](examples/fetch_replies.yml) into your site's `.github/workflows/` and fill in its placeholders: your commit back to the repo step and your deploy step.
 1. Update your post.html template to include the code below and style accordingly.
 
 ## Usage
