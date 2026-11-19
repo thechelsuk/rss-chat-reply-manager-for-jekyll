@@ -3,6 +3,7 @@
 ## Setup
 
 1. Clone the repo
+1. Install the dependencies: `pip install -r requirements.txt`
 1. Rename config.py.example to config.py
 1. Create any necessary tokens
 1. Populate config.py with our username feed
