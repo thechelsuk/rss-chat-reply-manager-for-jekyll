@@ -2,7 +2,7 @@
 {
   "name": "@thechelsuk/rss-chat-reply-manager-for-jekyll",
   "version": "1.0.0",
-  "description": "Manages replies from rss.chat into a static site with a scheduled python script and templating",
+  "description": "Manages replies from rss.chat into a static site with a scheduled Python script and templating",
   "repository": {
     "type": "git",
     "url": "https://github.com/thechelsuk/rss-chat-reply-manager-for-jekyll.git"
